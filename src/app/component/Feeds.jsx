@@ -1,53 +1,57 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Feeds() {
   return (
-    <div >
-      <div className='flex justify-between'>
-        <h3 className='pl-20 font-extrabold text-2xl'>Latest Stories</h3>
-        <h3 className='pr-20 text-1xl'>View all Stories</h3>
-      </div>
-      <div className='pt-10 grid grid-cols-3 justify-self-center'>
-      <div className='pl-5'>
+
+
+      <div className='  pt-10 sm:grid grid-cols-1 md:grid-cols-3 lg: grid-cols-3  m-10'>
+      <div className='pb-5 '>
+      <Link href='/'>
       <Image 
-      src='/image/feed1.png'
-      width={400}
-      height={400}
+      src='/image/newsfeeds.png'
+      width={350}
+      height={250}
      alt="feed1"
      priority
      />
      <p className='pt-10 text-sm'>MARKET ANALYSIS</p>
      <h1 className='pt-5 font-bold text-2xl'>Crypto Market in 2022</h1>
      <p className='pt-5 text-sm'>Mar 8, 2023. 8 Min Read</p>
+      </Link>
       </div>
-      <div>
+      <div className='pb-10 pl-3 '>
+      <Link href='/'>
       <Image 
-      src='/image/feed3.png'
-      width={400}
-      height={400}
+      src='/image/side.png'
+      width={350}
+      height={250}
      alt="feed2"
      priority
      />
      <p className='pt-10 text-sm '>MARKET ANALYSIS</p>
      <h1 className='pt-5 font-bold text-2xl'>Crypto Market in 2022</h1>
      <p className='pt-5 text-sm'>Mar 8, 2023. 8 Min Read</p>
+      </Link>
       </div>
-      <div>
-      <Image 
-      src='/image/feed2.jpeg'
+      <div className='pl-3'>
+      <Link href='/'>
+        <Image 
+      src='/image/pop1.png'
       width={350}
-      height={350}
+      height={250}
      alt="feed"
      priority
      />
      <p className='pt-10 text-sm'>MARKET ANALYSIS</p>
      <h1 className='pt-5 font-bold text-2xl'>Crypto Market in 2022</h1>
      <p className='pt-5 text-sm'>Mar 8, 2023. 8 Min Read</p>
+      </Link>
+      
       </div>
     </div>
-      
-    </div>
+
   )
 }
 
