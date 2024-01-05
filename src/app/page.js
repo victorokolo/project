@@ -8,6 +8,7 @@ import Feeds from './component/Feeds'
 import End from './component/End'
 import Footer from'./component/Footer'
 import Footer1 from'./component/Footer1'
+import Footer2 from './component/Footer2'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
     <End/>
     <Footer/>
     <Footer1/>
+    <Footer2/>
     </main>
   )
 }

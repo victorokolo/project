@@ -4,12 +4,14 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 bg-black text-white  text-center'>
- <div className='pb-20'>
+    <div className=' text-xs justify-stretch font-normal pt-10 grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 bg-black text-white 
+    text-center'>
+
+    <div className='pb-20'>
  <Link href='/'>
  <ul>
       
- <li>Features</li>
+ <li className='text-lg font-medium'>Features</li>
 <li className='pt-5'>Card Payment</li>
 <li className='pt-5'>Crypto Transfer</li>
 <li className='pt-5'>p2p Trading</li>
@@ -21,7 +23,7 @@ function Footer() {
  <div className='pb-10'>
  <Link href='/'>
  <ul>
- <li>Contact</li>
+ <li className='text-lg font-medium'>Contact</li>
  <li className='pt-5'>Company</li>
  <li className='pt-5'>About us</li> 
  <li className='pt-5'>Blog</li>
@@ -36,7 +38,7 @@ function Footer() {
 
  <Link href='/'>
  <ul>
- <li >Support</li>
+ <li className='text-lg font-medium'>Support</li>
  <li className='pt-5'>Give us Feedback</li>
  <li className='pt-5'>Help out</li>
  <li className='pt-5'>Live Chat</li>
@@ -45,11 +47,12 @@ function Footer() {
  </div>
 
 
- <div className='pb-10'>
+
+ 
+ <div className='pb-10 text-center'>
  <Link href='/'>
  <ul>
- <li>Resource</li>
-  <li className='pt-5'>Resource </li>
+  <li className='text-lg font-medium'>Resource </li>
 <li className='pt-5'>Developer</li>
 <li className='pt-5'>Documentation</li>
 <li className='pt-5'>Api Reference</li>
@@ -60,18 +63,17 @@ function Footer() {
  </div>
 
 
- <div className='pb-10'>
+ <div className='pb-10 '>
  <Link href='/'>
- <ul>
- <li className='pt-5'>Contact</li>
+ <ul className=''>
+ <li className='text-lg font-medium'>Contact</li>
  <li className='pt-5'>Support@cloudp2p.io</li>
- <li className='pt-5'>1234 eln street san Franciso,<br/> CA 94109 united state</li>
+ <li className='pt-5 justify-stretch'>1234 eln street san<br/> Franciso, CA 94109<br/> united state</li>
  </ul>
  </Link>
  
     </div>
     </div>
-    
   )
 }
 

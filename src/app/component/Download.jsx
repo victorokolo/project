@@ -1,27 +1,45 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Download() {
   return (
-    <div className='  justify-self-center pt-20 px-10
-    rounded-r-3xl rounded-t-3xl bg-slate-200 mx-20 my-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ' >
-     <div className='pl-7 pt-8'>
-     <button className=' px-5 py-3 rounded-full bg-white text-black pb-3' > New</button>
-     <p>Cross Border Payment</p>
-     <h1 className='sm:text-xl pt-10 font-extrabold'>Safe Secure & Private
+    <div className='rounded-r-2xl mx-0 md:ml-10 md:mr-10 mt-20 justify-self-center pt-20 px-10 bg-violet-50
+     grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ' >
+     <div className=' pt-8 '>
+     <div className='flex'>
+     <button className=' px-5 py-3 rounded-full bg-sky-600 text-white pb-3' > New</button>
+   <Link href={'/'}>
+   <p className='pt-3 pl-3 text-blue-600 text-lg font-normal'>Cross Border Payment</p>
+   </Link>
+    <Link href={'/'}>
+    <Image  className="pl-3 pt-4"
+    src="/pic/arrowright.svg"
+      width={30}
+     height={30}
+    alt="phone"
+    priority
+    /> 
+    </Link>
+   </div>
+     
+     <h1 className='text-xl lg:text-4xl md:text-xl font-bold  pt-10'>Safe Secure & Private
      </h1>
-     <h1 className='pt-3   sm:text-xl font-extrabold  pb-10'>International Transaction</h1>
+     <h1 className='pt-3  text-xl lg:text-4xl md:text-xl font-bold  pb-10'>International Transaction</h1>
+     <Link href='/'>
      <Image  className="pb-10"
-     src="/image/BTN.png"
+     src="/pic/BTN.svg"
        width={350}
       height={715}
      alt="phone"
      priority
      />
+     </Link>
+ 
      </div>
      <div>
-     <Image  className="w-350 md:w-200 lg:w-350"
-     src="/image/promax.png"
+     <Image  className=" justify-end"
+     src="/pic/smallphone.svg"
        width={350}
       height={715}
      alt="phone"

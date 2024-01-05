@@ -18,7 +18,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className="w-full pl-20 bg-sky-600  shadow">
+      <nav className="w-full  bg-sky-600  shadow">
         <div className=" px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div className=''>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -74,40 +74,40 @@ export default function Home() {
                 navbar ? 'block' : 'hidden'
               }`}
             >
-              <ul className=" pl-5 items-center justify-center justify-end space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <ul className=" pl-5 items-center justify-center font-medium md:text-sm lg:font-medium  space-y-8 md:flex md:space-x-6 md:space-y-0">
                 
-                <li className="text-white text-sm">
+                <li className="text-white   font-medium">
                   <Link href="/blogs">
                     Products
                   </Link>
                 </li>
-                <li className="text-white text-sm">
+                <li className="text-white   font-medium">
                   <Link href="/about">
                     Features
                   </Link>
                 </li>
-                <li className="text-white text-sm">
+                <li className="text-white   font-medium">
                   <Link href="/contact">
                     Support
                   </Link>
                 </li>
-                <li className="text-white text-sm">
+                <li className="text-white   font-medium">
                 <Link href="/contact">
                   About us
                 </Link>
               </li>
-              <li className="text-white text-sm">
+              <li className="text-white   font-medium">
               <Link href="/contact">
-                BLog
+                Blog
               </Link>
             </li>
-            <div className='flex px- md:items-center md:flex md:px-8'>
+            <div className='flex pl-0 md:pl-20 lg:pl-60'>
             <Link href= '/Home'>
-            <li className=' pt-3 text-white  hover:border-b text-sm'>
+            <li className=' pt-3 text-white  hover:border-b  font-medium'>
             Sign in</li>
           </Link>
-          <div className='pl-5' >
-          <button className ='px-6 py-3 rounded-full bg-white text-black'>Get started</button>
+          <div className='pl-5 ' >
+          <button className ='px-6 py-3 rounded-full bg-white text-black font-medium'>Get started</button>
           </div>
             </div>
            
