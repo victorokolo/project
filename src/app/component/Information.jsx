@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function Information() {
   return (
-    <div  className='text-black  mt-20 sm:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2'>
+    <div  className='text-black  mt-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3'>
       <div className='pl-10 pt-20 '>
         <h1 className='pb-10 text-xl font-bold'>Secure Transfer</h1>
         <p className='text-lg font-normal text-justify justify-stretch pr-10'> A secure transfer system that ensures your transcation are safe & your personnal 

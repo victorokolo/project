@@ -4,9 +4,9 @@ import React from 'react'
 
 function Stories() {
   return (
-    <div className='flex justify-between pt-20 text-center '>
+    <div className='flex justify-between pt-20 text-center  '>
     <Link href='/'>
-    <h1 className='pl-10 text-sm font-extrabold  md:text-2xl'>Latest Stories</h1>
+    <h1 className='pl-5 text-sm font-extrabold  md:text-2xl'>Latest Stories</h1>
     </Link>
     <div>
     <div className='flex '>
